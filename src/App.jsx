@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import NET from "vanta/src/vanta.net";
 import * as THREE from "three"; 
 import "./styles.css"; 
-import NavBar from "./components/Navbar.jsx";
+import NavBar from "./components/NavBar.jsx";
 import TabletDisplay from "./components/TabletDisplay.jsx";
 
 
