@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import NET from "vanta/src/vanta.net";
 import * as THREE from "three"; 
 import "./styles.css"; 
-import NavBar from "./components/Navbar";
-import TabletDisplay from "./components/TabletDisplay";
+import NavBar from "./components/Navbar.jsx";
+import TabletDisplay from "./components/TabletDisplay.jsx";
 
 
 function App() {
