@@ -1,0 +1,27 @@
+.frontend-page {
+    margin: 0.3em;
+    width: 45vw;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden; /* Prevents default scrolling */
+    scrollbar-width: none; /* Hide default scrollbar */
+    user-select: none; /* Prevents text selection while dragging */
+    cursor: grab; /* Shows grab cursor */
+    background-color: rgba(223, 183, 183, 0.1);
+    border-radius: 30px;
+    padding-top: 10em;
+  }
+  
+  .frontend-page:active {
+    cursor: grabbing;
+  }
+  
+  .project {
+    background: rgba(223, 183, 183, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    min-height: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+  }

@@ -1,0 +1,61 @@
+.page {
+    padding: 20px;
+    color: #00ffcc; /* Neon glow effect */
+    font-family: 'Courier New', monospace;
+    text-align: center;
+    animation: fadeIn 0.8s ease-in-out;
+}
+  
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .page-content {
+    font-size: 1rem;
+    opacity: 0.8;
+  }
+  
+  /* Fade-in effect */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+button {
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+    
+button.bi {
+  background: none;
+  border: 2px solid #00ffcc; /* Neon border */
+  color: #00ffcc; /* Neon text */
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  outline: none;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 8px rgba(0, 255, 204, 0.8); /* Initial neon glow */
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Hover effect */
+button.bi:hover {
+  background-color: rgba(0, 255, 204, 0.1); /* Light neon background */
+  box-shadow: 0 0 15px rgba(0, 255, 204, 1); /* Stronger neon glow */
+  transform: scale(1.05); /* Slight pop-up */
+}
+
+/* Active/Click effect */
+button.bi:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 20px rgba(0, 255, 204, 1);
+}

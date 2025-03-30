@@ -1,0 +1,137 @@
+/* Tablet Base Styles */
+.tablet-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-color: transparent;
+}
+
+/* Tablet Frame */
+.tablet-frame {
+  width: 900px;
+  height: 680px;
+  background: #222;
+  border-radius: 40px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border: 6px solid #333;
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Tablet Screen */
+.tablet-screen {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.2);
+  touch-action: manipulation;
+  position: absolute;
+  overflow: hidden;
+}
+
+/* Touch Ripple Effect */
+.touch-ripple {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: scale(0);
+  animation: ripple-animation 0.5s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  from {
+    transform: scale(0);
+    opacity: 1;
+  }
+  to {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* Home Button */
+.tablet-frame::after {
+  content: "";
+  position: absolute;
+  bottom: 15px;
+  width: 50px;
+  height: 5px;
+  background: #666;
+  border-radius: 10px;
+}
+
+@keyframes power-up {
+  0% { background: black; color: transparent; }
+  50% { background: #111; color: white; }
+  100% { background: black; color: white; }
+}
+
+.screen-content {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.2);
+  touch-action: manipulation;
+  position: relative;
+  overflow: hidden;
+  scrollbar-width: none; 
+}
+
+/* Fade out effect */
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* Fade in effect */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
